@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Verti by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="is-preload homepage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <header id="header" class="container">
+
+                <!-- Logo -->
+                <div id="logo">
+                    <h1><a href="index.html">Pizza2</a></h1>
+                    <!--<span>Formulate your pizza!</span>-->
+                </div>
+
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current"><a href="order.html">Order</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+        </div>
+
+        <!-- Main -->
+        <div class="container-fluid"></div>
+        <div id="banner" class="container">
+            <div class="row">
+                <!--Pizza display-->
+                <div id="pizza-display" class="col-xl-6 col-lg-6 col-md-12">
+                    <h2>Pizza Creator</h2>
+                    <h3>Toppings selected: </h3>
+                    <div>
+                    <!--Toppings selected list-->
+                        <ul id="topping-selected">
+                            <li id="topping-selected-sauce">Tomato Sauce</li>
+                            <li id="topping-selected-cheese">Mozzerella</li>
+                         
+                        </ul>
+                    </div>
+                    <!--Pizza preview-->
+                    <div id="pizza-preview">
+                        <!--Dough-->
+                        <img id="preview-whitecrust" src="images/preview/emptypizza.png" alt="white crust">
+                        <img id="preview-wholewheatcrust" src="images/preview/wholewheatcrust.png" alt="whole wheat crust">
+                        <!--Sauce-->
+                        <img id="preview-tomatosauce" src="images/preview/sauce.png" alt="tomato sauce topping ">
+                        <img id="preview-pestosauce" src="images/preview/pestosauce.png" alt="pestosauce topping ">
+                        <!--Cheese-->
+                        <img id="preview-mozzerella" src="images/preview/mozzerella.png"  alt="mozzerella topping">
+                        <!--Meat-->
+                        <img id="preview-pepperoni" src="images/preview/pepperoni.png" alt="pepperonni topping">
+                        <img id="preview-bacon" src="images/preview/bacon.png" alt="bacon topping">
+                        <img id="preview-sausage" src="images/preview/sausage.png" alt="sausage topping">
+                        <img id="preview-ham" src="images/preview/ham.png" alt="ham topping">
+
+                        <!--Veggies-->
+                        <img id="preview-greenpepper" src="images/preview/greenpeppers.png" alt="green pepper topping">
+                        <img id="preview-redpepper" src="images/preview/redpeppers.png" alt="red pepper topping">
+                        <img id="preview-redonions" src="images/preview/redonions.png" alt="red onions topping">
+                        <img id="preview-pineapple" src="images/preview/pineapple.png" alt="pineapple topping">
+                        <img id="preview-basil" src="images/preview/basil.png" alt="basil topping">
+                        <img id="preview-blackolives" src="images/preview/blackolives.png" alt="black olives topping">
+                        <img id="preview-greenolives" src="images/preview/greenolives.png" alt="green olives topping">
+                        <img id="preview-mushrooms" src="images/preview/mushrooms.png" alt="mushrooms topping">
+                    </div>
+
+                </div>
+                <!--Menu display-->
+                <div id="menu-display" class="col-xl-6 col-lg-6 col-s-12">
+                    <!--Menu categories-->
+                    <ul id="menu-categories">
+                        <li id="size-category"class="checked"><img id="size-icon" class="menu-icon"src ="images/menu/sizeicon.png">Size</li>
+                        <li id="dough-category"><img id="dough-icon" class="menu-icon"src ="images/menu/doughicon.png">Dough</li>
+                        <li id="cheese-category"><img id="cheese-icon" class="menu-icon"src ="images/menu/cheeseicon.png">Cheese</li>
+                        <li id="sauce-category"><img id="sauce-icon" class="menu-icon"src ="images/menu/sauceicon.png">Sauce</li>
+                        <li id="meat-category"><img id="meat-icon" class="menu-icon"src ="images/menu/meaticon.png">Meat</li>
+                        <li id="veggies-category"><img id="veggies-icon" class="menu-icon"src ="images/menu/veggiesicon.png">Veggies</li>
+                    </ul>
+
+                    <!--Specfic topping menu-->
+
+                    <ul id="size-menu">
+                            <li id="Small"><img class="topping-icon"src ="images/toppings/smallicon.png" id="small-icon">
+                                <span class="topping-text-move">Small</span>
+                                <img class="topping-checkbox" src ="images/checkmark.png" id="small-icon-box"></li>
+                            <li id="Medium"><img class="topping-icon"src ="images/toppings/mediumicon.png" id="medium-icon">
+                                <span class="topping-text-move">Medium</span>
+                                <img class="topping-checkbox" src ="images/checkmark.png" id="medium-icon-box"></li>
+                             <li id="Large"><img class="topping-icon"src ="images/toppings/largeicon.png" id="large-icon">
+                                <span class="topping-text-move">Large</span>
+                                <img class="topping-checkbox" src ="images/checkmark.png" id="large-icon-box"></li> 
+                    </ul>
+                    <ul id="dough-menu">
+                            <li id="White crust" class="checked"><img class="topping-icon"src ="images/toppings/whitedoughicon.png" id="whitecrust-icon">
+                                <span class="topping-text-move">White crust</span>
+                                <img class="topping-checkbox checkbox" src ="images/checkmark.png" id="whitecrust-icon-box"></li></li>
+                            <li id="Whole wheat crust" ><img class="topping-icon"src ="images/toppings/wholewheatdoughicon.png" id="wheatcrust-icon">
+                                <span class="topping-text-move">Whole wheat crust</span>
+                                <img class="topping-checkbox" src ="images/checkmark.png" id="wheatcrust-icon-box"></li></li>
+                            
+                    </ul>
+                    <ul id="cheese-menu">
+                            <li id="Mozzerella" class="checked"><img class="topping-icon"src ="images/toppings/mozzerellaicon.png" id="mozzerella-icon">
+                                <span class="topping-text-move">Mozzerella</span>
+                                <img class="topping-checkbox checkbox" src ="images/checkmark.png" id="cheese-icon-box"></li>
+                    </ul>
+                    <ul id="sauce-menu">
+                            <li id="Tomato sauce" class="checked"><img class="topping-icon"src ="images/toppings/tomatosauceicon.png" id="tomatosauce-icon">
+                                <span class="topping-text-move">Tomato sauce</span>
+                                <img class="topping-checkbox checkbox" src ="images/checkmark.png" id="tomatosauce-icon-box"></li>
+                            <li id="Pesto sauce"><img class="topping-icon"src ="images/toppings/pestosauceicon.png" id="pestosauce-icon">
+                                <span class="topping-text-move">Pesto sauce</span>
+                                <img class="topping-checkbox" src ="images/checkmark.png" id="pestosauce-icon-box"></li>
+                          
+                    </ul>
+
+                    <ul id="meat-menu">
+                        <li id="pepperoni"><img class="topping-icon"src ="images/toppings/pepperoniicon.png" id="icon-pepperoni">
+                            <span class="topping-text-move">Pepperoni</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="pepperoni-icon-box"></li>
+
+                        <li id="bacon"><img class="topping-icon"src ="images/toppings/baconicon.png" id="icon-bacon">
+                            <span class="topping-text-move">Bacon</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="bacon-icon-box"></li>
+
+                        <li id="sausage"><img class="topping-icon"src ="images/toppings/sausageicon.png" id="icon-sausage">
+                            <span class="topping-text-move">Sausage</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="sausage-icon-box"></li>     
+
+                        <li id="ham"><img class="topping-icon"src ="images/toppings/hamicon.png" id="icon-ham">
+                            <span class="topping-text-move">Ham</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="ham-icon-box"></li>
+                       
+                    </ul>
+
+                    <ul id="veggies-menu">
+                        <li id="greenpepper"><img id="icon-greenpepper" class="topping-icon"src ="images/toppings/greenpeppericon.png">
+                            <span class="topping-text-move">Green pepper</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="greenpepper-icon-box"></li>
+
+                        <li id ="redpepper"><img id="icon-redpepper" class="topping-icon"src ="images/toppings/redpeppericon.png">
+                            <span class="topping-text-move">Red pepper</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="redpepper-icon-box"></li>
+
+                        <li id="redonions"><img id="icon-redonions" class="topping-icon"src ="images/toppings/redonionicon.png">
+                            <span class="topping-text-move">Red onions</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="redonions-icon-box"></li>
+
+                        <li id="pineapple"><img id="icon-pineapple" class="topping-icon"src ="images/toppings/pineappleicon.png">
+                            <span class="topping-text-move">Pineapple</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="pineapple-icon-box"></li>
+
+                        <li id ="basil"><img id="icon-basil" class="topping-icon"src ="images/toppings/basilicon.png"> 
+                            <span class="topping-text-move">Basil</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="basil-icon-box"></li>
+
+                        <li id="blackolives"><img id="icon-blackolives" class="topping-icon"src ="images/toppings/blackolivesicon.png">
+                            <span class="topping-text-move">Black olives</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="blackolives-icon-box"></li>
+
+                        <li id="greenolives"><img id="icon-greenolives" class="topping-icon"src ="images/toppings/greenolivesicon.png">
+                            <span class="topping-text-move">Green olives</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="greenolives-icon-box"></li>
+
+                        <li id="mushrooms"><img id="icon-mushrooms" class="topping-icon"src ="images/toppings/mushroomicon.png">
+                            <span class="topping-text-move">Mushrooms</span>
+                            <img class="topping-checkbox" src ="images/checkmark.png" id="mushrooms-icon-box"></li>
+                    </ul>
+
+                
+                    <!--Total and finish order-->
+                    <div id=finish-section>
+                        <div id="total-section">
+                        <h3 id="total-price">Total: </h3>
+                        <ul id="price-list">
+                           <li id="size-selected"> </li>
+                           <li id="dough-selected">Regular white crust</li>
+                           <li id="cheese-selected">Mozzerella</li>
+                           <li id="sauce-selected">Tomato Sauce</li>
+                         
+                        </ul>
+                        </div>
+                        <button type="button" id="finish-button">Finish Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>

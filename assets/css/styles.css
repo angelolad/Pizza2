@@ -1,0 +1,914 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
+
+
+/*background and text*/
+    body {
+		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/bg01.png");
+		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/bg01.png");
+		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/bg01.png");
+		background-image: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/bg01.png");
+		background-color: #f7f7f7;
+		background-position: top left, top left;
+		background-repeat: repeat-x, repeat;
+		background-size: 100% 30em, auto;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 13pt;
+        color: #696969;
+	}
+    h1, h2, h3, h4{
+        color: #444;
+        font-size:3em;
+		font-weight: 800;
+    }
+
+	h3 {
+		font-size: 1.25em;
+		margin: 0 0 1em 0;
+    }
+.checkbox{
+  border-color: white;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+ 
+  transform: rotate(45deg);
+  height: 1.25em;
+  width: 0.75em;
+}
+
+.topping-checkbox{
+    max-width: 4%;
+    float:right;
+    margin: 0.5em 2em 0em 0em;
+}
+
+/*Logo*/
+#logo { 
+        margin-top: 1em;
+}
+		#logo h1 {
+			background: #D34F3E;
+			color: #fff;
+			font-family: 'Oleo Script', serif;
+			font-weight: 400;
+			padding: 0.1em 0.2em 0.1em 0.2em;
+			font-size: 3.25em;
+			letter-spacing: 0.05em;
+            display: inline-block;
+            text-decoration: none;
+			vertical-align: middle;
+        }
+        
+        #logo a {
+            text-decoration: none;
+            color:white;
+        }
+        #logo a:hover {
+            text-decoration: none;
+            color:white;
+        }
+		#logo span {
+			font-weight: 800;
+			line-height: 4.5em;
+			letter-spacing: 0.025em;
+			font-size: 0.9em;
+			vertical-align: middle;
+			margin: 0 0 0 1.25em;
+        }
+/* Header */
+
+#header {
+		position: relative;
+    }
+    
+.row{
+    margin-top:0.5em;
+}
+/* Nav */
+
+#nav {
+    position: absolute;
+    display: inline;
+    top:0;
+    right:0;
+    font-size: 0.9em;
+}
+
+    #nav ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+        #nav ul li {
+            float: left;
+            line-height: 4.5em;
+            padding-left: 1.5em;
+        }
+
+            #nav ul li a, #nav ul li span {
+                -moz-transition: background-color .25s ease-in-out;
+                -webkit-transition: background-color .25s ease-in-out;
+                -ms-transition: background-color .25s ease-in-out;
+                transition: background-color .25s ease-in-out;
+                font-weight: 800;
+                letter-spacing: 0.025em;
+                color: #696969;
+                text-decoration: none;
+                padding: 0.5em 1em 0.5em 1em;
+            }
+
+            #nav ul li > ul {
+                display: none;
+            }
+
+            #nav ul li:hover a, #nav ul li:hover span {
+                background: #fff;
+            }
+
+            #nav ul li.active a, #nav ul li.active span {
+                background: #fff;
+            }
+
+            #nav ul li.current a {
+                background: #444;
+                color: #fff;
+            }
+		
+/* Row */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+    
+/* XLarge */
+
+	@media screen and (max-width: 1680px) {
+
+		/* Basic */
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+	}
+
+/* Large */
+
+	@media screen and (max-width: 1280px) {
+
+		/* Basic */
+
+			body, input, select, textarea {
+				font-size: 11pt;
+			}
+
+    }
+    
+
+/* Medium */
+
+	#navPanel, #navToggle {
+		display: none;
+	}
+
+	@media screen and (max-width: 980px) {
+
+		/* Basic */
+
+			html, body {
+				overflow-x: hidden;
+			}
+
+			body, input, select, textarea {
+				font-size: 11pt;
+			}
+
+		/* Menu */
+
+			ul.menu li {
+				display: block;
+				border: 0 !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+		/* Actions */
+
+			ul.actions li {
+				display: block;
+				padding: 0;
+				margin: 1em 0 0 0;
+			}
+
+				ul.actions li:first-child {
+					margin-top: 0;
+				}
+
+		/* Wrappers */
+
+			#header-wrapper {
+				padding: 3em 0 1em 0;
+				text-align: center;
+			}
+
+
+		/* Logo */
+
+			#logo span {
+				display: block;
+				margin: 0;
+			}
+
+		/* Nav */
+
+			#nav {
+				display: none;
+			}
+
+		/* Nav */
+
+			#page-wrapper {
+				-moz-backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				-ms-backface-visibility: hidden;
+				backface-visibility: hidden;
+				-moz-transition: -moz-transform 0.5s ease;
+				-webkit-transition: -webkit-transform 0.5s ease;
+				-ms-transition: -ms-transform 0.5s ease;
+				transition: transform 0.5s ease;
+				padding-bottom: 1px;
+			}
+
+			#navToggle {
+				-moz-backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				-ms-backface-visibility: hidden;
+				backface-visibility: hidden;
+				-moz-transition: -moz-transform 0.5s ease;
+				-webkit-transition: -webkit-transform 0.5s ease;
+				-ms-transition: -ms-transform 0.5s ease;
+				transition: transform 0.5s ease;
+				display: block;
+				height: 44px;
+				left: 0;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 10001;
+			}
+
+				#navToggle .toggle {
+					width: 70px;
+					height: 50px;
+					opacity: 0.35;
+				}
+
+					#navToggle .toggle:before {
+						display: inline-block;
+						font-family: FontAwesome;
+						text-decoration: none;
+						font-style: normal;
+						font-weight: normal;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						position: absolute;
+						left: 6px;
+						top: 6px;
+						background: rgba(0, 0, 0, 0.5);
+						width: 58px;
+						height: 38px;
+						border-radius: 6px;
+						content: '\f0c9';
+						color: #fff;
+						text-align: center;
+						line-height: 38px;
+						font-size: 20px;
+					}
+
+					#navToggle .toggle:active {
+						opacity: 0.75;
+					}
+
+			#navPanel {
+				-moz-backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				-ms-backface-visibility: hidden;
+				backface-visibility: hidden;
+				-moz-transform: translateX(-275px);
+				-webkit-transform: translateX(-275px);
+				-ms-transform: translateX(-275px);
+				transform: translateX(-275px);
+				-moz-transition: -moz-transform 0.5s ease;
+				-webkit-transition: -webkit-transform 0.5s ease;
+				-ms-transition: -ms-transform 0.5s ease;
+				transition: transform 0.5s ease;
+				display: block;
+				height: 100%;
+				left: 0;
+				overflow-y: auto;
+				position: fixed;
+				top: 0;
+				width: 275px;
+				z-index: 10002;
+				background: #fff;
+				box-shadow: inset -3px 0px 0px 0px #dfdfdf;
+				padding: 0 23px 0 20px;
+			}
+
+				#navPanel .link {
+					display: block;
+					text-decoration: none;
+					height: 54px;
+					line-height: 54px;
+					border-top: solid 1px #e8e8e8;
+					color: #696969;
+				}
+
+					#navPanel .link:first-child {
+						border-top: 0;
+					}
+
+				#navPanel .indent-1 {
+					display: inline-block;
+					width: 1em;
+				}
+
+				#navPanel .indent-2 {
+					display: inline-block;
+					width: 2em;
+				}
+
+				#navPanel .indent-3 {
+					display: inline-block;
+					width: 3em;
+				}
+
+				#navPanel .indent-4 {
+					display: inline-block;
+					width: 4em;
+				}
+
+				#navPanel .indent-5 {
+					display: inline-block;
+					width: 5em;
+				}
+
+				#navPanel .depth-0 {
+					color: #444;
+					font-weight: 800;
+				}
+
+			body.navPanel-visible #page-wrapper {
+				-moz-transform: translateX(275px);
+				-webkit-transform: translateX(275px);
+				-ms-transform: translateX(275px);
+				transform: translateX(275px);
+			}
+
+			body.navPanel-visible #navToggle {
+				-moz-transform: translateX(275px);
+				-webkit-transform: translateX(275px);
+				-ms-transform: translateX(275px);
+				transform: translateX(275px);
+			}
+
+			body.navPanel-visible #navPanel {
+				-moz-transform: translateX(0);
+				-webkit-transform: translateX(0);
+				-ms-transform: translateX(0);
+				transform: translateX(0);
+			}
+
+	}
+
+/* Small */
+
+	@media screen and (max-width: 736px) {
+
+		/* Basic */
+			body, input, select, textarea {
+				line-height: 2em;
+			}
+
+			h2, h3, h4, h5, h6 {
+				font-size: 13pt;
+				margin: 0 0 1em 0;
+			}
+        }
+/* Header */
+#header {
+    position: relative;
+}
+
+/* Pizza preview images */
+#pizza-preview{
+    position: relative;
+
+}
+#preview-whitecrust{
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+	bottom: 0;
+	display: block;
+    margin: auto;
+    z-index: 0;
+}
+#preview-wholewheatcrust{
+	visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+	bottom: 0;
+	display:block;
+	margin: auto;
+    z-index: 0;
+}
+#preview-tomatosauce {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 1;
+}
+#preview-pestosauce {
+	position: absolute;
+	visibility: hidden;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 1;
+}
+#preview-mozzerella {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 2;
+}
+
+#preview-pepperoni {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+
+#preview-bacon {
+	visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+
+
+#preview-sausage{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+#preview-ham {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+/*Veggies*/
+#preview-greenpepper{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+#preview-redpepper{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+#preview-redonions{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+#preview-pineapple {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+#preview-basil{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+#preview-blackolives {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+#preview-greenolives{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+#preview-mushrooms {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;
+}
+#pizza-preview img{
+	max-width: 80%;
+}
+.img-small{
+   	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    max-width: 5%;
+}
+
+/* Pizza Display */
+#pizza-display h2{
+    margin-top: 0.25em;
+}
+
+#pizza-display{
+    background-color:white;   
+}
+
+/* Menu Display */ 
+#menu-display{
+    background-color: #D34F3E;
+}
+#menu-categories{
+    cursor: pointer;
+    padding:0;
+    background-color:white;
+    display: flex;  
+    list-style-type: none;
+    text-align: center;
+}
+#menu-categories li{
+    font-weight: 600;
+    padding:1em 1em 1.5em 1em;
+    margin: auto ;
+    
+}
+
+.menu-icon{
+    display: block;
+    max-width: 70%;
+    margin: auto;
+}
+/* Darker background-color on hover */
+#menu-categories li:hover {
+    background: #ddd;
+}
+.topping-icon{
+    display: inline-block;
+    max-width: 8%;
+}
+/* When clicked on, add a background color and strike out text */
+.checked {
+    
+    background: #444;;
+    color: #fff;
+}
+
+.unchecked{
+    background: white;;
+    color: #696969;
+}
+/* Menu toppings*/
+
+#size-menu{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+    list-style-type:none;
+    background: white;
+    margin-top:-0.5em;
+    
+    /*make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#size-menu li{
+    padding: 1em 0em 1em 1em;
+}
+/* Darker background-color on hover */
+#size-menu li:hover {
+    background: #ddd;
+}
+#dough-menu{
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+    list-style-type:none;
+    background: white;
+    margin-top:-0.5em;
+    
+    /*make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#dough-menu li{
+    padding: 1em 0em 1em 1em;
+}
+/* Darker background-color on hover */
+#dough-menu li:hover {
+    background: #ddd;
+}
+#cheese-menu{
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+    list-style-type:none;
+    background: white;
+    margin-top:-0.5em;
+    
+    /*make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#cheese-menu li{
+    padding: 1em 0em 1em 1em;
+}
+/* Darker background-color on hover */
+#cheese-menu li:hover {
+    background: #ddd;
+}
+#sauce-menu{
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+    list-style-type:none;
+    background: white;
+    margin-top:-0.5em;
+    
+    /*make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#sauce-menu li{
+    padding: 1em 0em 1em 1em;
+}
+/* Darker background-color on hover */
+#sauce-menu li:hover {
+    background: #ddd;
+}
+
+#meat-menu{
+	display: none;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+    list-style-type:none;
+    background: white;
+    margin-top:-0.5em;
+    
+    /*make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#meat-menu li{
+    padding: 1em 0em 1em 1em;
+}
+/* Darker background-color on hover */
+#meat-menu li:hover {
+    background: #ddd;
+}
+
+#veggies-menu{
+    
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+    list-style-type:none;
+    background: white;
+    margin-top:-0.5em;
+    
+    /*make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#veggies-menu li{
+    padding: 1em 0em 1em 1em;
+}
+/*toppings*/
+.topping-icon{
+    display: inline;
+    max-width: 9%;
+}
+.topping-text-move{
+    padding : 0em 0em 0em 1em;
+}
+/* Darker background-color on hover */
+#veggies-menu li:hover {
+    background: #ddd;
+}
+
+/*Set all odd list items to a different color (zebra-stripes)
+#menu-meat li:nth-child(odd) {
+    background: #f9f9f9;
+}*/
+#finish-section{
+    background-color:white;   
+}
+#price-list{
+	list-style-type:none;
+}
+#total-section{
+    padding: 1em;
+}
+#pepperoni-selected{
+	display: none;
+}
+#finish-button{
+	cursor: pointer;
+	float:right;
+	
+	background-color:white;
+	font-weight: 400;
+	padding: 0.5em 1em;
+	font-size: 1.75em;
+    text-decoration: none;		
+}
+
+/*About page*/
+#about-img {
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    max-width: 100%;
+}
+
+/*Contact page*/
+.contact-header{
+  
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.white-header{
+    color:white;
+ }
+.white{
+
+    color:white;
+}
+
+input[type=text], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact-comment{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact-submit {
+    font-weight: 800;
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color:white;
+    background-color: #D34F3E;
+    border: 1px solid #ccc;
+}
+.contact-icons{
+    float:left;
+    max-width: 8%;
+
+}
+
+/* Home page */
+#home-banner{
+    max-width: 100%;
+    height:auto;
+    
+}
+.container .btn {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: #696969;
+    font-size: 1em;
+    padding: 0.75em 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.container .btn:hover {
+    color:white;
+    background-color: #444;
+
+}
+
